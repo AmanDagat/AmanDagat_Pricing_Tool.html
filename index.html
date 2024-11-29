@@ -20,6 +20,10 @@
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
         input, button {
             padding: 10px;
             margin: 10px 0;
@@ -61,11 +65,14 @@
 </head>
 <body>
     <div class="container">
+        <!-- Add your logo here -->
+        <img src="logo.png" alt="AmanDagat Logo" class="logo">
+
         <h1>AmanDagat Pricing Tool</h1>
         <label for="guestCount">Number of Guests:</label>
         <input type="number" id="guestCount" min="1" max="45" placeholder="Guests">
         <label for="nights">Number of Nights:</label>
-        <input type="number" id="nights" min="1" placeholder="Nights">
+        <input type="number" id="nights" min="1" value="1" placeholder="Nights">
         <button onclick="allocateVillas()">Calculate Pricing</button>
         <div id="output" class="output"></div>
     </div>
